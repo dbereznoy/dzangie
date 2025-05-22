@@ -1,4 +1,5 @@
 ## Подключение официального репозитория Angie и установка Angie Pro + 2 модуля
+---
 
 root@angie-test:~# cd /home/berezhnoidv/
 root@angie-test:/home/berezhnoidv# cp angie* /etc/ssl/angie
