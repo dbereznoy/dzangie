@@ -1,6 +1,5 @@
 ## Подключение официального репозитория Angie и установка Angie Pro + 2 модуля
-
-### Установите Angie и несколько дополнительных (на выбор) модулей из репозитория
+## Установите Angie и несколько дополнительных (на выбор) модулей из репозитория
 root@angie-test:~# cd /home/berezhnoidv/
 
 root@angie-test:/home/berezhnoidv# cp angie* /etc/ssl/angie
@@ -41,7 +40,7 @@ root@angie-test:/home/berezhnoidv# systemctl status angie
 May 22 11:57:33 angie-test systemd[1]: Starting angie.service - Angie - high performance web server...
 May 22 11:57:33 angie-test systemd[1]: Started angie.service - Angie - high performance web server.
 
-### Запустите Angie из Docker-образа. Необходимо вынести конфигурацию в хостовую директорию и указать проброс портов в хостовую сеть для HTTP/HTTPS
+## Запустите Angie из Docker-образа. Необходимо вынести конфигурацию в хостовую директорию и указать проброс портов в хостовую сеть для HTTP/HTTPS
 root@angie-test:/home/berezhnoidv# apt install docker.io
 
 root@angie-test:/home/berezhnoidv# docker run --rm --name angie -v /var/www:/usr/share/angie/html:ro  -p 8080:80 -d docker.angie.software/angie:latestc6fa1a3545564d6036ab9020f24a3a52582d814abe4c7d57e367962c2de0f48c
