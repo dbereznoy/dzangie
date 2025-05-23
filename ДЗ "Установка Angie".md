@@ -5,7 +5,7 @@
 `root@angie-test:/home/berezhnoidv# cp angie* /etc/ssl/angie`
 
 `root@angie-test:/home/berezhnoidv# sudo curl -o /etc/apt/trusted.gpg.d/angie-signing.gpg \
-            https://angie.software/keys/angie-signing.gpg  `
+            https://angie.software/keys/angie-signing.gpg`  
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current  
                                  Dload  Upload   Total   Spent    Left  Speed  
 100  4491  100  4491    0     0  69623      0 --:--:-- --:--:-- --:--:-- 70171  
