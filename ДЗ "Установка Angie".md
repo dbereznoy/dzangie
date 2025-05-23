@@ -1,6 +1,6 @@
 ## Подключение официального репозитория Angie и установка Angie Pro + 2 модуля
 ## Установите Angie и несколько дополнительных (на выбор) модулей из репозитория
-`root@angie-test:~# cd /home/berezhnoidv/  `
+root@angie-test:~# `cd /home/berezhnoidv/  `
 
 root@angie-test:/home/berezhnoidv# cp angie* /etc/ssl/angie
 
