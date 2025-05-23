@@ -1,11 +1,11 @@
 ## Подключение официального репозитория Angie и установка Angie Pro + 2 модуля
 ## Установите Angie и несколько дополнительных (на выбор) модулей из репозитория
-root@angie-test:~# `cd /home/berezhnoidv/  `
+`root@angie-test:~# cd /home/berezhnoidv/  `
 
-root@angie-test:/home/berezhnoidv# cp angie* /etc/ssl/angie
+`root@angie-test:/home/berezhnoidv# cp angie* /etc/ssl/angie`
 
-root@angie-test:/home/berezhnoidv# sudo curl -o /etc/apt/trusted.gpg.d/angie-signing.gpg \
-            https://angie.software/keys/angie-signing.gpg  
+`root@angie-test:/home/berezhnoidv# sudo curl -o /etc/apt/trusted.gpg.d/angie-signing.gpg \
+            https://angie.software/keys/angie-signing.gpg  `
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current  
                                  Dload  Upload   Total   Spent    Left  Speed  
 100  4491  100  4491    0     0  69623      0 --:--:-- --:--:-- --:--:-- 70171  
