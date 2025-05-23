@@ -5,19 +5,19 @@ root@angie-test:~# cd /home/berezhnoidv/
 root@angie-test:/home/berezhnoidv# cp angie* /etc/ssl/angie
 
 root@angie-test:/home/berezhnoidv# sudo curl -o /etc/apt/trusted.gpg.d/angie-signing.gpg \
-            https://angie.software/keys/angie-signing.gpg
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100  4491  100  4491    0     0  69623      0 --:--:-- --:--:-- --:--:-- 70171
+            https://angie.software/keys/angie-signing.gpg  
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current  
+                                 Dload  Upload   Total   Spent    Left  Speed  
+100  4491  100  4491    0     0  69623      0 --:--:-- --:--:-- --:--:-- 70171  
 
 root@angie-test:/home/berezhnoidv# echo "deb https://download.angie.software/angie-pro/$(. /etc/os-release && echo "$ID/$VERSION_ID $VERSION_CODENAME") main" \
-    | sudo tee /etc/apt/sources.list.d/angie.list > /dev/null
+    | sudo tee /etc/apt/sources.list.d/angie.list > /dev/null  
     
-root@angie-test:/home/berezhnoidv# cat /etc/apt/apt.conf.d/90download-angie
-Acquire::https::download.angie.software::Verify-Peer "true";
-Acquire::https::download.angie.software::Verify-Host "true";
-Acquire::https::download.angie.software::SslCert     "/etc/ssl/angie/angie-repo.crt";
-Acquire::https::download.angie.software::SslKey      "/etc/ssl/angie/angie-repo.key";
+root@angie-test:/home/berezhnoidv# cat /etc/apt/apt.conf.d/90download-angie  
+Acquire::https::download.angie.software::Verify-Peer "true";  
+Acquire::https::download.angie.software::Verify-Host "true";  
+Acquire::https::download.angie.software::SslCert     "/etc/ssl/angie/angie-repo.crt";  
+Acquire::https::download.angie.software::SslKey      "/etc/ssl/angie/angie-repo.key";  
 
 root@angie-test:/home/berezhnoidv# apt update
 
