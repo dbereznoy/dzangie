@@ -43,11 +43,11 @@ May 22 11:57:33 angie-test systemd[1]: Started angie.service - Angie - high perf
 ## Запустите Angie из Docker-образа. Необходимо вынести конфигурацию в хостовую директорию и указать проброс портов в хостовую сеть для HTTP/HTTPS
 root@angie-test:/home/berezhnoidv# apt install docker.io
 
-root@angie-test:/home/berezhnoidv# docker run --rm --name angie -v /var/www:/usr/share/angie/html:ro  -p 8080:80 -d docker.angie.software/angie:latestc6fa1a3545564d6036ab9020f24a3a52582d814abe4c7d57e367962c2de0f48c
-
-root@angie-test:/home/berezhnoidv# docker ps
+`root@angie-test:/home/berezhnoidv# docker run --rm --name angie -v /var/www:/usr/share/angie/html:ro  -p 8080:80 -d docker.angie.software/angie:latestc6fa1a3545564d6036ab9020f24a3a52582d814abe4c7d57e367962c2de0f48c
+`
+`root@angie-test:/home/berezhnoidv# docker ps
 CONTAINER ID   IMAGE                                COMMAND                  CREATED         STATUS         PORTS                                   NAMES
-c6fa1a354556   docker.angie.software/angie:latest   "angie -g 'daemon of…"   5 seconds ago   Up 4 seconds   0.0.0.0:8080->80/tcp, :::8080->80/tcp   angie
+c6fa1a354556   docker.angie.software/angie:latest   "angie -g 'daemon of…"   5 seconds ago   Up 4 seconds   0.0.0.0:8080->80/tcp, :::8080->80/tcp   angie`
 
 root@angie-test:/home/berezhnoidv# netstat -tulpn
 Active Internet connections (only servers)
