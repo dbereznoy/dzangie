@@ -74,15 +74,17 @@ root@angie-test:/home/berezhnoidv# curl localhost:8080
 root@angie-test:/home/berezhnoidv# docker rm -f angie  
 angie  
 
-root@angie-test:/home/berezhnoidv# docker ps  
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES  
+root@angie-test:/home/berezhnoidv# docker ps    
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES    
+
 root@angie-test:/home/berezhnoidv# docker run  --name angie -v /var/www:/usr/share/angie/html:ro -v /home/berezhnoidv/angie:/etc/angie:ro -p 8080:80 -d docker.angie.software/angie:latest  
 a4cd3875bdfd4e4be2093214e4a7b1956824dcbace0bd994d353aa3e94cfb7fb  
 
 root@angie-test:/home/berezhnoidv# docker ps
 CONTAINER ID   IMAGE                                COMMAND                  CREATED         STATUS         PORTS                                   NAMES
-a4cd3875bdfd   docker.angie.software/angie:latest   "angie -g 'daemon of…"   9 seconds ago   Up 9 seconds   0.0.0.0:8080->80/tcp, :::8080->80/tcp   angie
-root@angie-test:/home/berezhnoidv# curl localhost:8080
+a4cd3875bdfd   docker.angie.software/angie:latest   "angie -g 'daemon of…"   9 seconds ago   Up 9 seconds   0.0.0.0:8080->80/tcp, :::8080->80/tcp   angie  
+
+root@angie-test:/home/berezhnoidv# curl localhost:8080  
 <h2>test docker</h2>
 
 
