@@ -55,7 +55,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 127.0.0.1:41041         0.0.0.0:*               LISTEN      2123/containerd  
 tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      802/angie: master p  
 tcp        0      0 127.0.0.1:6010          0.0.0.0:*               LISTEN      1238/sshd: berezhno  
-__tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      2725/docker-proxy__
+__tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      2725/docker-proxy__  
 tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN      470/systemd-resolve  
 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      470/systemd-resolve  
 tcp6       0      0 ::1:6010                :::*                    LISTEN      1238/sshd: berezhno  
